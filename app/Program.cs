@@ -7,7 +7,6 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using PeachPied.Demo.Plugins;
 using PeachPied.WordPress.AspNetCore;
-using PeachPied.WordPress.Sdk;
 
 namespace PeachPied.Demo
 {
@@ -33,6 +32,13 @@ namespace PeachPied.Demo
         {
             services.AddMvc();
             services.AddResponseCompression();
+            services.AddWordPress(options =>
+            {
+                // options.SiteUrl =
+                // options.HomeUrl = "http://localhost:5004";
+                
+                // options.PluginContainer.Add(new DashboardPlugin());
+            });
         }
 
         public void Configure(IApplicationBuilder app, IHostEnvironment env, IConfiguration configuration)
