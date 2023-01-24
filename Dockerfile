@@ -3,13 +3,13 @@ WORKDIR /app
 EXPOSE 80
 EXPOSE 443
 
-FROM alpine:3.17 AS build
-RUN apk add dotnet6-sdk dotnet5-sdk --no-cache
+FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build
 WORKDIR /src
 COPY ["app/app.csproj", "app/"]
 COPY ["MyContent/MyContent.msbuildproj", "MyContent/"]
 COPY ["global.json", "global.json"]
 COPY ["Directory.Build.props", "Directory.Build.props"]
+RUN dotnet restore "MyContent/MyContent.msbuildproj"
 RUN dotnet restore "app/app.csproj"
 COPY . .
 WORKDIR "/src/app"
