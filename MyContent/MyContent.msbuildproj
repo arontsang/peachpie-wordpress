@@ -2,6 +2,8 @@
   <PropertyGroup>
     <WpContentTarget></WpContentTarget>
     <PhpRelativePath>wp-content/</PhpRelativePath>
-    <TargetFramework>net6.0</TargetFramework>
+    <RestorePackagesWithLockFile>true</RestorePackagesWithLockFile>
+    <WpExclude>$(WpExclude);packages.lock.json</WpExclude>
+    <DisableImplicitNuGetFallbackFolder>true</DisableImplicitNuGetFallbackFolder>
   </PropertyGroup>
 </Project>

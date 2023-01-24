@@ -21,8 +21,8 @@ public class Startup
 		services.AddWordPress(options =>
 		{
 			// options.SiteUrl =
-			options.HomeUrl = Configuration["HomeUrl"] ?? "http://localhost:5004";
-                
+			if (Configuration["HomeUrl"] is {} url)
+				options.HomeUrl =  url;
 			// options.PluginContainer.Add<DashboardPlugin>(); // add plugin using dependency injection
 		});
 	}
