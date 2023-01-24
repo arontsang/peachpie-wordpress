@@ -9,11 +9,14 @@ COPY ["app/app.csproj", "app/"]
 COPY ["MyContent/MyContent.msbuildproj", "MyContent/"]
 COPY ["global.json", "global.json"]
 COPY ["Directory.Build.props", "Directory.Build.props"]
-RUN dotnet restore "MyContent/MyContent.msbuildproj"
-RUN dotnet restore "app/app.csproj"
+RUN --mount=type=cache,id=nuget,target=/root/.nuget/packages \
+    dotnet restore "MyContent/MyContent.msbuildproj"
+RUN --mount=type=cache,id=nuget,target=/root/.nuget/packages \
+    dotnet restore "app/app.csproj"
 COPY . .
 WORKDIR "/src/app"
-RUN dotnet build "app.csproj" -c Release -o /app/build
+RUN  --mount=type=cache,id=nuget,target=/root/.nuget/packages \
+    dotnet build "app.csproj" -c Release -o /app/build  --no-restore
 
 FROM build AS publish
 RUN dotnet publish "app.csproj" -c Release -p:PublishReadyToRun=true -o /app/publish
