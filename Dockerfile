@@ -19,7 +19,7 @@ WORKDIR "/src/app"
 RUN  dotnet build "app.csproj" -c Release -o /app/build  --no-restore
 
 FROM build AS publish
-RUN dotnet publish "app.csproj" -c Release -p:PublishReadyToRun=true -o /app/publish
+RUN dotnet publish "app.csproj" -c Release -o /app/publish
 
 FROM base AS final
 WORKDIR /app

@@ -15,6 +15,16 @@
           "Peachpie.Runtime": "1.1.4"
         }
       },
+      "Peachpie.Library.PDO.Sqlite": {
+        "type": "Direct",
+        "requested": "[1.2.0-r15261, )",
+        "resolved": "1.2.0-r15261",
+        "contentHash": "HZbM3wJvyT52O2xanwTPxHW0nm4lJtqaB6iG/dsYg73+70pN4OoQyTap2HqDkpNDExE4KQVGCen9Aau0PdMWQw==",
+        "dependencies": {
+          "Microsoft.Data.Sqlite": "3.1.7",
+          "Peachpie.Library.PDO": "1.2.0-r15261"
+        }
+      },
       "PeachPied.WordPress.AspNetCore": {
         "type": "Direct",
         "requested": "[6.0.1-rc-010, )",
@@ -633,6 +643,23 @@
         "resolved": "4.5.0",
         "contentHash": "kaj6Wb4qoMuH3HySFJhxwQfe8R/sJsNJnANrvv8WdFPMoNbKY5htfNscv+LHCu5ipz+49m2e+WQXpLXr9XYemQ=="
       },
+      "Microsoft.Data.Sqlite": {
+        "type": "Transitive",
+        "resolved": "3.1.7",
+        "contentHash": "hJyGT7w+mpEb+7oaaIQZRmuysufbYAOTmDbVFpJIXNtnNQyl0zPsKSVZ2dmEfTE3wOZxLNF0FCTkjxr/taDqPg==",
+        "dependencies": {
+          "Microsoft.Data.Sqlite.Core": "3.1.7",
+          "SQLitePCLRaw.bundle_e_sqlite3": "2.0.2"
+        }
+      },
+      "Microsoft.Data.Sqlite.Core": {
+        "type": "Transitive",
+        "resolved": "3.1.7",
+        "contentHash": "NpX0Ni0ZYxbWXtTxVfFnHR7i/+dCX+BayFSPjH8rCEv5NZXtndKyR0Gh3xl5jpuhv4m1eZr8njq+sV2fNREPjw==",
+        "dependencies": {
+          "SQLitePCLRaw.core": "2.0.2"
+        }
+      },
       "Microsoft.Extensions.Caching.Abstractions": {
         "type": "Transitive",
         "resolved": "2.2.0",
@@ -1094,8 +1121,8 @@
       },
       "Peachpie.Library": {
         "type": "Transitive",
-        "resolved": "1.1.4",
-        "contentHash": "YhM2O7CsQ8BadgugLGwGkZY8X9RsxwvWaRDV/AGnVyxj1JEBu/rkAiCioSRbCGPJntTU9LgbNc5o4YKn0Wk0pw==",
+        "resolved": "1.2.0-r15261",
+        "contentHash": "lKaRcHIEekSOPz12HMD1Dd7ltIUws4BzyyEJSeY8gwdZ+j9npZRkr+Rn8femXFBkjN0niCy2Q0gW523KdrmIDA==",
         "dependencies": {
           "BCrypt.Net-Next": "4.0.2",
           "FluentFTP": "33.0.3",
@@ -1103,7 +1130,7 @@
           "Mono.Posix": "7.1.0-final.1.21458.1",
           "NGettext": "0.6.6",
           "Peachpie.Library.RegularExpressions": "1.6.0",
-          "Peachpie.Runtime": "1.1.4",
+          "Peachpie.Runtime": "1.2.0-r15261",
           "Rationals": "1.4.0",
           "System.IO.FileSystem.AccessControl": "4.7.0",
           "System.IO.FileSystem.DriveInfo": "4.3.1",
@@ -1153,11 +1180,11 @@
       },
       "Peachpie.Library.PDO": {
         "type": "Transitive",
-        "resolved": "1.1.4",
-        "contentHash": "UwSH5E8i+OR1m1W6Ph1oBQCjFaIs6QgKcMfkBrI1oIEJi10bU656gDU0BVczZdVNOyqPzwbSYZsFLgMYLjK0zw==",
+        "resolved": "1.2.0-r15261",
+        "contentHash": "1VwF17JkHeI8pR8kbn8PyHojor8niGw9lvb0PcPEMdLIfNjf7GcTEtbOsEMJBOEO0NDoZ9FqELnkkVGq8pjWlQ==",
         "dependencies": {
-          "Peachpie.Library": "1.1.4",
-          "Peachpie.Runtime": "1.1.4"
+          "Peachpie.Library": "1.2.0-r15261",
+          "Peachpie.Runtime": "1.2.0-r15261"
         }
       },
       "Peachpie.Library.RegularExpressions": {
@@ -1210,8 +1237,8 @@
       },
       "Peachpie.Runtime": {
         "type": "Transitive",
-        "resolved": "1.1.4",
-        "contentHash": "OBZe+vRnH7k7giOJrq1XluDmmNnfyjRZuXrV0gut23Hjoy9OYJp7X3uTCv1Zc3CgTSXcbHlSLk2xB3UM4O4KHQ==",
+        "resolved": "1.2.0-r15261",
+        "contentHash": "NklQOvi6O8rrJfKPnAmmnAc7IGmo1TBQRRVoEAFVMYPV9rEY7oEG85pd6f8b72T4yMrTccT8tajYOSLXRIZhzg==",
         "dependencies": {
           "Microsoft.Extensions.ObjectPool": "5.0.3",
           "System.Reflection.Emit": "4.7.0",
@@ -1433,6 +1460,37 @@
         "dependencies": {
           "SixLabors.Fonts": "1.0.0-beta0013",
           "SixLabors.ImageSharp": "1.0.0-rc0003"
+        }
+      },
+      "SQLitePCLRaw.bundle_e_sqlite3": {
+        "type": "Transitive",
+        "resolved": "2.0.2",
+        "contentHash": "OVPI/nh5AqfLCIKhAYqjCa6AHhc7oKApGcGM3UhMRSerFiBx58nSpGwxVFdMgjOCWZR+fA49nzsnKlWp5hFo8w==",
+        "dependencies": {
+          "SQLitePCLRaw.core": "2.0.2",
+          "SQLitePCLRaw.lib.e_sqlite3": "2.0.2",
+          "SQLitePCLRaw.provider.dynamic_cdecl": "2.0.2"
+        }
+      },
+      "SQLitePCLRaw.core": {
+        "type": "Transitive",
+        "resolved": "2.0.2",
+        "contentHash": "TFSBX426OelS1tkaVC254NVVlrJIe9YLhWPkEvuqJj2104QpmDmEYOhfdfDJD1E/2SmqDhoRw1ek5cQHj8olcQ==",
+        "dependencies": {
+          "System.Memory": "4.5.3"
+        }
+      },
+      "SQLitePCLRaw.lib.e_sqlite3": {
+        "type": "Transitive",
+        "resolved": "2.0.2",
+        "contentHash": "S+Tsqe/M7wsc+9HeediI6UHtBKf2X586aRwhi1aBVLGe0WxkAo52O9ZxwEy/v8XMLefcrEMupd2e9CDlIT6QCw=="
+      },
+      "SQLitePCLRaw.provider.dynamic_cdecl": {
+        "type": "Transitive",
+        "resolved": "2.0.2",
+        "contentHash": "ZSwacbKJUsxJEZxwT23uZVrGbaIvXcADZDz5Sr66fikO5eehdcceDncjzwzTzWfW13di8gpTpstx3WJSt/Ci5Q==",
+        "dependencies": {
+          "SQLitePCLRaw.core": "2.0.2"
         }
       },
       "System.AppContext": {

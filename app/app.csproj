@@ -14,6 +14,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="Peachpie.Library.PDO.Sqlite" Version="1.2.0-r15261" />
     <PackageReference Include="PeachPied.WordPress.AspNetCore" Version="$(WpDotNetVersion)" />
     <PackageReference Include="Peachpie.AspNetCore.Mvc" Version="$(PeachpieVersion)" />
     <ProjectReference Include="../MyContent/MyContent.msbuildproj">
