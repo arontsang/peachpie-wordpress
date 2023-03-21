@@ -1,18 +1,18 @@
 {
   "version": 1,
   "dependencies": {
-    "net6.0": {
+    "net7.0": {
       "Peachpie.AspNetCore.Mvc": {
         "type": "Direct",
-        "requested": "[1.1.4, )",
-        "resolved": "1.1.4",
-        "contentHash": "nH/wvY2pid3VxrhTNtU0RMwmbY3HpSCH9Y15pdqQ66AAlKblJ2zWHtr5HGNQMVuSaN49lmh1UB4y4z+TlApCYw==",
+        "requested": "[1.1.7, )",
+        "resolved": "1.1.7",
+        "contentHash": "9NvltWyLfn6Q/KwODAyKutPnJ/hCuOlDPkutemQcy85o0xYhnmjqURDWSnDMySbAsR3PvgJbxawMaOBgAdPmfQ==",
         "dependencies": {
           "Microsoft.AspNetCore.Html.Abstractions": "2.2.0",
           "Microsoft.AspNetCore.Mvc": "2.2.0",
           "Microsoft.AspNetCore.Mvc.ViewFeatures": "2.2.0",
-          "Peachpie.AspNetCore.Web": "1.1.4",
-          "Peachpie.Runtime": "1.1.4"
+          "Peachpie.AspNetCore.Web": "1.1.7",
+          "Peachpie.Runtime": "1.1.7"
         }
       },
       "Peachpie.Library.PDO.Sqlite": {
@@ -27,9 +27,9 @@
       },
       "PeachPied.WordPress.AspNetCore": {
         "type": "Direct",
-        "requested": "[6.0.1-rc-010, )",
-        "resolved": "6.0.1-rc-010",
-        "contentHash": "R2ytl2aW7NNUhOWIPadjhnlu/xYM2jyCHHT1VVjzsJ33n120jRQOT+4HUa9CrLQZ3VPHTM0+DoKqlH49Odj/qA==",
+        "requested": "[6.1.1-rc-014, )",
+        "resolved": "6.1.1-rc-014",
+        "contentHash": "VL+UGKsiqT2CAe5CziErvet1bqPs1iL1popU0gdSFCWL8dViNN2Glr/b/EM/kr+UXD8MgN2YYuSLVl4Mvr1/4w==",
         "dependencies": {
           "Microsoft.AspNetCore.Http.Abstractions": "2.2.0",
           "Microsoft.AspNetCore.ResponseCaching": "2.2.0",
@@ -39,12 +39,12 @@
           "Microsoft.Extensions.DependencyModel": "6.0.0",
           "Microsoft.Extensions.FileProviders.Physical": "2.2.0",
           "NuGet.Protocol.Core.v3": "4.2.0",
-          "PeachPied.WordPress": "6.0.1-rc-010",
-          "PeachPied.WordPress.DotNet": "6.0.1-rc-010",
-          "PeachPied.WordPress.DotNetBridge": "6.0.1-rc-010",
-          "PeachPied.WordPress.HotPlug": "6.0.1-rc-010",
-          "Peachpie.AspNetCore.Mvc": "1.1.4",
-          "Peachpie.AspNetCore.Web": "1.1.4",
+          "PeachPied.WordPress": "6.1.1-rc-014",
+          "PeachPied.WordPress.DotNet": "6.1.1-rc-014",
+          "PeachPied.WordPress.DotNetBridge": "6.1.1-rc-014",
+          "PeachPied.WordPress.HotPlug": "6.1.1-rc-014",
+          "Peachpie.AspNetCore.Mvc": "1.1.7",
+          "Peachpie.AspNetCore.Web": "1.1.7",
           "Peachpie.Compiler.Diagnostics": "1.0.10"
         }
       },
@@ -1064,34 +1064,34 @@
       },
       "Peachpie.App": {
         "type": "Transitive",
-        "resolved": "1.1.4",
-        "contentHash": "x+bbIXsCw0PlB15coHaXC/ydcz8TdX4RO2cy3sQ9hCOKtNZDJH3K4eJeN63BIDcBQae5h6LvsLm6iQq7ZFV03A==",
+        "resolved": "1.1.7",
+        "contentHash": "Cecz6O/0HJyyu9GRqFVsoH3fNFKr96fKsyDs2KMtC6RWI/pByg7bHa+DjnC1nJxO9Kd3f+gv6BVYoKGPgwtVIA==",
         "dependencies": {
-          "Peachpie.Library": "1.1.4",
-          "Peachpie.Library.Graphics": "1.1.4",
-          "Peachpie.Library.MsSql": "1.1.4",
-          "Peachpie.Library.MySql": "1.1.4",
-          "Peachpie.Library.Network": "1.1.4",
-          "Peachpie.Library.PDO": "1.1.4",
-          "Peachpie.Library.Scripting": "1.1.4",
-          "Peachpie.Library.XmlDom": "1.1.4",
-          "Peachpie.Runtime": "1.1.4"
+          "Peachpie.Library": "1.1.7",
+          "Peachpie.Library.Graphics": "1.1.7",
+          "Peachpie.Library.MsSql": "1.1.7",
+          "Peachpie.Library.MySql": "1.1.7",
+          "Peachpie.Library.Network": "1.1.7",
+          "Peachpie.Library.PDO": "1.1.7",
+          "Peachpie.Library.Scripting": "1.1.7",
+          "Peachpie.Library.XmlDom": "1.1.7",
+          "Peachpie.Runtime": "1.1.7"
         }
       },
       "Peachpie.AspNetCore.Web": {
         "type": "Transitive",
-        "resolved": "1.1.4",
-        "contentHash": "FAiVWVEXjX2irJSIJNnst3CxuNn0E12t0rN9hpu9QlV7PQN4utjr0ly7F2BYSrzz3TwZDQCZ1IIgbBDzbfdIDw==",
+        "resolved": "1.1.7",
+        "contentHash": "qQMN5tjWC7XrTxiWY19V2zLmE7b/t1wTZIEQUnQvqTN+jGRZC/g4EpdUK9WtKFaAE1uY9ZVwFb1SpMPYI6alCA==",
         "dependencies": {
           "Microsoft.Extensions.DependencyModel": "6.0.0",
-          "Peachpie.Library": "1.1.4",
-          "Peachpie.Runtime": "1.1.4"
+          "Peachpie.Library": "1.1.7",
+          "Peachpie.Runtime": "1.1.7"
         }
       },
       "Peachpie.CodeAnalysis": {
         "type": "Transitive",
-        "resolved": "1.1.4",
-        "contentHash": "0BJ+okkZqcVUtaAm+jKS40iE+z0px2TjHWChdt1Uxi7jLA4OKYm4Im5FR9VLMBsxEOGd2jyuRJKzCGbPlh+kqA==",
+        "resolved": "1.1.7",
+        "contentHash": "0FxGsbAW+jDEb7g3338LJVJXB8uyu0GpdUjtpqGXucvmScYOJfInhghTMEnCE8P/Y5Tq0rd54OdSFyXnA60rNA==",
         "dependencies": {
           "Devsense.Php.Parser": "8.2.12198",
           "Devsense.Php.Phar": "1.0.40",
@@ -1139,11 +1139,11 @@
       },
       "Peachpie.Library.Graphics": {
         "type": "Transitive",
-        "resolved": "1.1.4",
-        "contentHash": "YM2OKx5vuRHQF/w2VU/w6IZAIlzb2oXgDmuaoL8S2l5YmeT4beMlS87fQ4GUsE9lyjMs68XHygJ8Sqz8WKaNrA==",
+        "resolved": "1.1.7",
+        "contentHash": "0PjjD8EU1yzqltkrv6rrGGg/03kHr8Yw3cKQ5aOfpqLrP45fo8dI62+3Mg5ZNXGViHr98tCFXEFQwbxQ9qm4dQ==",
         "dependencies": {
-          "Peachpie.Library": "1.1.4",
-          "Peachpie.Runtime": "1.1.4",
+          "Peachpie.Library": "1.1.7",
+          "Peachpie.Runtime": "1.1.7",
           "SixLabors.Fonts": "1.0.0-beta0013",
           "SixLabors.ImageSharp": "1.0.0",
           "SixLabors.ImageSharp.Drawing": "1.0.0-beta0010"
@@ -1151,31 +1151,31 @@
       },
       "Peachpie.Library.MsSql": {
         "type": "Transitive",
-        "resolved": "1.1.4",
-        "contentHash": "syGykcgM5uQ9+dAxIRD6oYSdAj9joq5CoYlxh3UR7RdIUHSPMF/O6i64fkypxQ6mCXUKs9Di2Cm+oucj43v7KQ==",
+        "resolved": "1.1.7",
+        "contentHash": "g/CTH6tZKNEQ4n/43R+l4bmyo5knVfO2c2aP3ZTYJn4fzj6Ipk9LHT4CQE/qcAtXtFLPH21O+mtY1ZfI6Tqt8g==",
         "dependencies": {
-          "Peachpie.Library": "1.1.4",
-          "Peachpie.Runtime": "1.1.4",
+          "Peachpie.Library": "1.1.7",
+          "Peachpie.Runtime": "1.1.7",
           "System.Data.SqlClient": "4.6.0"
         }
       },
       "Peachpie.Library.MySql": {
         "type": "Transitive",
-        "resolved": "1.1.4",
-        "contentHash": "5wqPjd0/dxTFLi+2CrLTLK7+tCmnhUKCcv3T2VuKknroIG6HK45+SEr+F78lF8l09ritUW7qbJn+C0mxvsDtvA==",
+        "resolved": "1.1.7",
+        "contentHash": "PZLJLe5ArOkkzAHSfA/hDAvCv98Sh8inGu/pADIwgIzByqDFr0UbCOV5cacKKhmcf7Xuhhkhq50c34W87DLEVg==",
         "dependencies": {
           "MySqlConnector": "2.0.0",
-          "Peachpie.Library": "1.1.4",
-          "Peachpie.Runtime": "1.1.4"
+          "Peachpie.Library": "1.1.7",
+          "Peachpie.Runtime": "1.1.7"
         }
       },
       "Peachpie.Library.Network": {
         "type": "Transitive",
-        "resolved": "1.1.4",
-        "contentHash": "Nwv/51YBIUcjqqYU2sViXcYxQY9nl6Q7uKOM2JOThUkM3KuhkbMoKCapcOUzxNfsbgdh8u53NC2CKhogm4AuLg==",
+        "resolved": "1.1.7",
+        "contentHash": "udnfTbDvCH8fgzAO2WQYH6JZMDKtSw3RE2+IrW4NL1gQ/mmfR8YeSvzW/0hKwypTz53Pybjl2S3t6TOGv0wTdA==",
         "dependencies": {
-          "Peachpie.Library": "1.1.4",
-          "Peachpie.Runtime": "1.1.4"
+          "Peachpie.Library": "1.1.7",
+          "Peachpie.Runtime": "1.1.7"
         }
       },
       "Peachpie.Library.PDO": {
@@ -1194,26 +1194,26 @@
       },
       "Peachpie.Library.Scripting": {
         "type": "Transitive",
-        "resolved": "1.1.4",
-        "contentHash": "Z3V+Krd377tFv8kGUjMNEYufdoafp8xj44wza8PWetRH0c8IdFZ8IvttkGj21CHCeh+7l0v7K1jx3Bu7XOTK8w==",
+        "resolved": "1.1.7",
+        "contentHash": "sh8cHKi11RWeTvG61mQtUBha7Na2gJMtyWyn85+lJMbF4UOlll0s5vHAdz3nI/+gnk5IdCVkDiNOFcYZIu6+JQ==",
         "dependencies": {
-          "Peachpie.CodeAnalysis": "1.1.4",
-          "Peachpie.Library": "1.1.4",
-          "Peachpie.Library.XmlDom": "1.1.4",
+          "Peachpie.CodeAnalysis": "1.1.7",
+          "Peachpie.Library": "1.1.7",
+          "Peachpie.Library.XmlDom": "1.1.7",
           "Peachpie.Microsoft.CodeAnalysis": "3.7.1",
-          "Peachpie.Runtime": "1.1.4",
+          "Peachpie.Runtime": "1.1.7",
           "System.Runtime.Loader": "4.3.0"
         }
       },
       "Peachpie.Library.XmlDom": {
         "type": "Transitive",
-        "resolved": "1.1.4",
-        "contentHash": "SeiKg1bYfgTiO8JN1nhMHsPG+FcHDoXAWQVk6e+16yqX5NQTV6IFxRC8fSyN++3tBEbqM+rp67zShkdSWFrohQ==",
+        "resolved": "1.1.7",
+        "contentHash": "oHxUiKn1c3X/+BKRvAP9KAkEF7JkVG88bBNgRGUsxG6m4vsdVOQlUass8+wNzLYgrc2Dwey/tGJHTMqB69gMjA==",
         "dependencies": {
           "HtmlAgilityPack": "1.11.25",
           "Mvp.Xml.NetStandard": "1.1.1",
-          "Peachpie.Library": "1.1.4",
-          "Peachpie.Runtime": "1.1.4",
+          "Peachpie.Library": "1.1.7",
+          "Peachpie.Runtime": "1.1.7",
           "System.Security.Cryptography.Xml": "4.4.0",
           "System.Xml.ReaderWriter": "4.3.0",
           "System.Xml.XPath": "4.3.0",
@@ -1247,45 +1247,45 @@
       },
       "PeachPied.WordPress": {
         "type": "Transitive",
-        "resolved": "6.0.1-rc-010",
-        "contentHash": "/K5EK7q2ol+i1D1zcQhfK+mN/CtYCm+dHjgmAyY1gyr4qDDz6zRrPUK2cg8BPxolGs+yitUDSdwt1u2tsE2Tqw==",
+        "resolved": "6.1.1-rc-014",
+        "contentHash": "ZsnSt7kK1au5WFVgrfAiPRk+c5ZvrkitUPc1zXZrL8O60Gtp95BeOBdAObuSVZVgdXqH9U0B06YdbCwi/CCSEw==",
         "dependencies": {
-          "PeachPied.WordPress.Standard": "6.0.1-rc-010",
-          "Peachpie.App": "1.1.4"
+          "PeachPied.WordPress.Standard": "6.1.1-rc-014",
+          "Peachpie.App": "1.1.7"
         }
       },
       "PeachPied.WordPress.DotNet": {
         "type": "Transitive",
-        "resolved": "6.0.1-rc-010",
-        "contentHash": "84AmAYtSq32V6R0Or3VIZZufonV7f0i6+nwWJC4qj8/SHnxkR0yb0E72z6pgNsMWoua/eKikGwwam+08VMZTug==",
+        "resolved": "6.1.1-rc-014",
+        "contentHash": "qJOL1wae4U9jG9L8ked4JPlyI4f3To39oZcbWZiAAmb119zLPQzxsZmc4rUEgbR97RF7C1Chs8/j6JxIlDlrrQ==",
         "dependencies": {
-          "PeachPied.WordPress": "6.0.1-rc-010"
+          "PeachPied.WordPress": "6.1.1-rc-014"
         }
       },
       "PeachPied.WordPress.DotNetBridge": {
         "type": "Transitive",
-        "resolved": "6.0.1-rc-010",
-        "contentHash": "ayd2tmm8exaFE2pO+nEdTvFo3QtXI22dmPtCkDG+djvIIrhCCEqOXW6psxfoCoYXcxft606Mpbqe9E5VK7OmjA==",
+        "resolved": "6.1.1-rc-014",
+        "contentHash": "h9TizixDVIFCopxtFLPyeGSfxE4Fy6rVm1TDF3qrbrspHZpo+uoie4XM0WayFUuvioSFWgMwUtixpbtT6LWV/A==",
         "dependencies": {
-          "PeachPied.WordPress": "6.0.1-rc-010",
-          "Peachpie.App": "1.1.4"
+          "PeachPied.WordPress": "6.1.1-rc-014",
+          "Peachpie.App": "1.1.7"
         }
       },
       "PeachPied.WordPress.HotPlug": {
         "type": "Transitive",
-        "resolved": "6.0.1-rc-010",
-        "contentHash": "RB4jLD2Vfw87Vbo/X6pOZFdVvC9BBpRJb8NMDCQtfIx+CQvCryzs9/1rQNzJ0WZlL13Yqy5leCgI9wFJWH93oA==",
+        "resolved": "6.1.1-rc-014",
+        "contentHash": "bT7IQq4psvPZZV+9gs2SJbovPzxewVGbPyGT3ILKW0PI3jbis729vX+uqPYMy4p06yF80xKo9Wk73uWJs30ZGw==",
         "dependencies": {
-          "PeachPied.WordPress": "6.0.1-rc-010"
+          "PeachPied.WordPress": "6.1.1-rc-014"
         }
       },
       "PeachPied.WordPress.Standard": {
         "type": "Transitive",
-        "resolved": "6.0.1-rc-010",
-        "contentHash": "TijRhiHrd1ssw5uZbalSKHCnn0Yup0p/syR7xl+h/f8V5vcMtN/dCdi2vhpKYvapaQ/Sdad0nIqMtM1UrNA5Og==",
+        "resolved": "6.1.1-rc-014",
+        "contentHash": "Gv+5VD4UzCvc8mnWF1go4Du06c7riVEPc4xb55C0Au+VfDzrRuVwYUnCZoJsVvbURrY8Qv1LtmCa9oPxHlZIkQ==",
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection.Abstractions": "2.2.0",
-          "Peachpie.Runtime": "1.1.4",
+          "Peachpie.Runtime": "1.1.7",
           "System.Composition": "1.2.0",
           "System.Text.Json": "5.0.2"
         }
@@ -2655,7 +2655,7 @@
       "mycontent": {
         "type": "Project",
         "dependencies": {
-          "PeachPied.WordPress": "[6.0.1-rc-010, 6.0.1-rc-010]",
+          "PeachPied.WordPress": "[6.1.1-rc-014, 6.1.1-rc-014]",
           "Peachpie.App": "[1.1.4, )"
         }
       }

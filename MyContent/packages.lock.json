@@ -21,12 +21,12 @@
       },
       "PeachPied.WordPress": {
         "type": "Direct",
-        "requested": "[6.0.1-rc-010, 6.0.1-rc-010]",
-        "resolved": "6.0.1-rc-010",
-        "contentHash": "/K5EK7q2ol+i1D1zcQhfK+mN/CtYCm+dHjgmAyY1gyr4qDDz6zRrPUK2cg8BPxolGs+yitUDSdwt1u2tsE2Tqw==",
+        "requested": "[6.1.1-rc-014, 6.1.1-rc-014]",
+        "resolved": "6.1.1-rc-014",
+        "contentHash": "ZsnSt7kK1au5WFVgrfAiPRk+c5ZvrkitUPc1zXZrL8O60Gtp95BeOBdAObuSVZVgdXqH9U0B06YdbCwi/CCSEw==",
         "dependencies": {
-          "PeachPied.WordPress.Standard": "6.0.1-rc-010",
-          "Peachpie.App": "1.1.4"
+          "PeachPied.WordPress.Standard": "6.1.1-rc-014",
+          "Peachpie.App": "1.1.7"
         }
       },
       "BCrypt.Net-Next": {
@@ -392,8 +392,8 @@
       },
       "Peachpie.Runtime": {
         "type": "Transitive",
-        "resolved": "1.1.4",
-        "contentHash": "OBZe+vRnH7k7giOJrq1XluDmmNnfyjRZuXrV0gut23Hjoy9OYJp7X3uTCv1Zc3CgTSXcbHlSLk2xB3UM4O4KHQ==",
+        "resolved": "1.1.7",
+        "contentHash": "H2CG6iuZQmfR8gqETcHMOGuNmNG9goU1SnlEIZGQM8eaChrY/0aCatAQiLxQD0BxSu0JGoAa7cXSwUb1eUmf+w==",
         "dependencies": {
           "Microsoft.Extensions.ObjectPool": "5.0.3",
           "System.Reflection.Emit": "4.7.0",
@@ -402,11 +402,11 @@
       },
       "PeachPied.WordPress.Standard": {
         "type": "Transitive",
-        "resolved": "6.0.1-rc-010",
-        "contentHash": "TijRhiHrd1ssw5uZbalSKHCnn0Yup0p/syR7xl+h/f8V5vcMtN/dCdi2vhpKYvapaQ/Sdad0nIqMtM1UrNA5Og==",
+        "resolved": "6.1.1-rc-014",
+        "contentHash": "Gv+5VD4UzCvc8mnWF1go4Du06c7riVEPc4xb55C0Au+VfDzrRuVwYUnCZoJsVvbURrY8Qv1LtmCa9oPxHlZIkQ==",
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection.Abstractions": "2.2.0",
-          "Peachpie.Runtime": "1.1.4",
+          "Peachpie.Runtime": "1.1.7",
           "System.Composition": "1.2.0",
           "System.Text.Json": "5.0.2"
         }
