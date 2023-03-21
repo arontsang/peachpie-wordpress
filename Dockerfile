@@ -1,4 +1,6 @@
-﻿FROM docker.io/library/alpine:3.17 AS base
+﻿ARG config=Release
+
+FROM mcr.microsoft.com/dotnet/aspnet:7.0 AS base
 WORKDIR /app
 EXPOSE 80
 
@@ -15,13 +17,15 @@ COPY ["MyContent/packages.lock.json", "MyContent/"]
 RUN dotnet restore "app/app.csproj" --locked-mode -v diag
 COPY . .
 WORKDIR "/src/app"
-RUN  dotnet build "app.csproj" -c Release -o /app/build  --no-restore
+ARG config
+RUN  dotnet build "app.csproj" -c $config --no-restore -o /app/build  
 
 FROM build AS publish
+ARG config
 RUN dotnet publish "app.csproj" \
-    -c Release  \
+    -c $config  \
     -p:PublishReadyToRun=true  \
-    -r linux-musl-x64  \
+    -r linux-x64  \
     --self-contained  \
     -o /app/publish
 
@@ -29,4 +33,4 @@ FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
 ENV ASPNETCORE_URLS=http://*:80
-ENTRYPOINT ["app"]
+ENTRYPOINT ["./app"]
