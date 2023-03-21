@@ -1,4 +1,4 @@
-﻿FROM docker.io/_/alpine:3.17 AS base
+﻿FROM docker.io/library/alpine:3.17 AS base
 WORKDIR /app
 EXPOSE 80
 
