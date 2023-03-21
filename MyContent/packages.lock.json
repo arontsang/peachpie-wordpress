@@ -1,22 +1,22 @@
 {
   "version": 1,
   "dependencies": {
-    ".NETCoreApp,Version=v5.0": {
+    "net7.0": {
       "Peachpie.App": {
         "type": "Direct",
-        "requested": "[1.1.4, )",
-        "resolved": "1.1.4",
-        "contentHash": "x+bbIXsCw0PlB15coHaXC/ydcz8TdX4RO2cy3sQ9hCOKtNZDJH3K4eJeN63BIDcBQae5h6LvsLm6iQq7ZFV03A==",
+        "requested": "[1.1.7, )",
+        "resolved": "1.1.7",
+        "contentHash": "Cecz6O/0HJyyu9GRqFVsoH3fNFKr96fKsyDs2KMtC6RWI/pByg7bHa+DjnC1nJxO9Kd3f+gv6BVYoKGPgwtVIA==",
         "dependencies": {
-          "Peachpie.Library": "1.1.4",
-          "Peachpie.Library.Graphics": "1.1.4",
-          "Peachpie.Library.MsSql": "1.1.4",
-          "Peachpie.Library.MySql": "1.1.4",
-          "Peachpie.Library.Network": "1.1.4",
-          "Peachpie.Library.PDO": "1.1.4",
-          "Peachpie.Library.Scripting": "1.1.4",
-          "Peachpie.Library.XmlDom": "1.1.4",
-          "Peachpie.Runtime": "1.1.4"
+          "Peachpie.Library": "1.1.7",
+          "Peachpie.Library.Graphics": "1.1.7",
+          "Peachpie.Library.MsSql": "1.1.7",
+          "Peachpie.Library.MySql": "1.1.7",
+          "Peachpie.Library.Network": "1.1.7",
+          "Peachpie.Library.PDO": "1.1.7",
+          "Peachpie.Library.Scripting": "1.1.7",
+          "Peachpie.Library.XmlDom": "1.1.7",
+          "Peachpie.Runtime": "1.1.7"
         }
       },
       "PeachPied.WordPress": {
@@ -245,8 +245,8 @@
       },
       "Peachpie.CodeAnalysis": {
         "type": "Transitive",
-        "resolved": "1.1.4",
-        "contentHash": "0BJ+okkZqcVUtaAm+jKS40iE+z0px2TjHWChdt1Uxi7jLA4OKYm4Im5FR9VLMBsxEOGd2jyuRJKzCGbPlh+kqA==",
+        "resolved": "1.1.7",
+        "contentHash": "0FxGsbAW+jDEb7g3338LJVJXB8uyu0GpdUjtpqGXucvmScYOJfInhghTMEnCE8P/Y5Tq0rd54OdSFyXnA60rNA==",
         "dependencies": {
           "Devsense.Php.Parser": "8.2.12198",
           "Devsense.Php.Phar": "1.0.40",
@@ -276,8 +276,8 @@
       },
       "Peachpie.Library": {
         "type": "Transitive",
-        "resolved": "1.1.4",
-        "contentHash": "YhM2O7CsQ8BadgugLGwGkZY8X9RsxwvWaRDV/AGnVyxj1JEBu/rkAiCioSRbCGPJntTU9LgbNc5o4YKn0Wk0pw==",
+        "resolved": "1.1.7",
+        "contentHash": "DjtPPCjhKjrHx1AhN9Jj04R+JYT9Sx7CaJ4ed+TIu8vjDVOmt4n/taazJibbrymZ2WiwgL0CGESakQINLMmn9g==",
         "dependencies": {
           "BCrypt.Net-Next": "4.0.2",
           "FluentFTP": "33.0.3",
@@ -285,7 +285,7 @@
           "Mono.Posix": "7.1.0-final.1.21458.1",
           "NGettext": "0.6.6",
           "Peachpie.Library.RegularExpressions": "1.6.0",
-          "Peachpie.Runtime": "1.1.4",
+          "Peachpie.Runtime": "1.1.7",
           "Rationals": "1.4.0",
           "System.IO.FileSystem.AccessControl": "4.7.0",
           "System.IO.FileSystem.DriveInfo": "4.3.1",
@@ -294,11 +294,11 @@
       },
       "Peachpie.Library.Graphics": {
         "type": "Transitive",
-        "resolved": "1.1.4",
-        "contentHash": "YM2OKx5vuRHQF/w2VU/w6IZAIlzb2oXgDmuaoL8S2l5YmeT4beMlS87fQ4GUsE9lyjMs68XHygJ8Sqz8WKaNrA==",
+        "resolved": "1.1.7",
+        "contentHash": "0PjjD8EU1yzqltkrv6rrGGg/03kHr8Yw3cKQ5aOfpqLrP45fo8dI62+3Mg5ZNXGViHr98tCFXEFQwbxQ9qm4dQ==",
         "dependencies": {
-          "Peachpie.Library": "1.1.4",
-          "Peachpie.Runtime": "1.1.4",
+          "Peachpie.Library": "1.1.7",
+          "Peachpie.Runtime": "1.1.7",
           "SixLabors.Fonts": "1.0.0-beta0013",
           "SixLabors.ImageSharp": "1.0.0",
           "SixLabors.ImageSharp.Drawing": "1.0.0-beta0010"
@@ -306,40 +306,40 @@
       },
       "Peachpie.Library.MsSql": {
         "type": "Transitive",
-        "resolved": "1.1.4",
-        "contentHash": "syGykcgM5uQ9+dAxIRD6oYSdAj9joq5CoYlxh3UR7RdIUHSPMF/O6i64fkypxQ6mCXUKs9Di2Cm+oucj43v7KQ==",
+        "resolved": "1.1.7",
+        "contentHash": "g/CTH6tZKNEQ4n/43R+l4bmyo5knVfO2c2aP3ZTYJn4fzj6Ipk9LHT4CQE/qcAtXtFLPH21O+mtY1ZfI6Tqt8g==",
         "dependencies": {
-          "Peachpie.Library": "1.1.4",
-          "Peachpie.Runtime": "1.1.4",
+          "Peachpie.Library": "1.1.7",
+          "Peachpie.Runtime": "1.1.7",
           "System.Data.SqlClient": "4.6.0"
         }
       },
       "Peachpie.Library.MySql": {
         "type": "Transitive",
-        "resolved": "1.1.4",
-        "contentHash": "5wqPjd0/dxTFLi+2CrLTLK7+tCmnhUKCcv3T2VuKknroIG6HK45+SEr+F78lF8l09ritUW7qbJn+C0mxvsDtvA==",
+        "resolved": "1.1.7",
+        "contentHash": "PZLJLe5ArOkkzAHSfA/hDAvCv98Sh8inGu/pADIwgIzByqDFr0UbCOV5cacKKhmcf7Xuhhkhq50c34W87DLEVg==",
         "dependencies": {
           "MySqlConnector": "2.0.0",
-          "Peachpie.Library": "1.1.4",
-          "Peachpie.Runtime": "1.1.4"
+          "Peachpie.Library": "1.1.7",
+          "Peachpie.Runtime": "1.1.7"
         }
       },
       "Peachpie.Library.Network": {
         "type": "Transitive",
-        "resolved": "1.1.4",
-        "contentHash": "Nwv/51YBIUcjqqYU2sViXcYxQY9nl6Q7uKOM2JOThUkM3KuhkbMoKCapcOUzxNfsbgdh8u53NC2CKhogm4AuLg==",
+        "resolved": "1.1.7",
+        "contentHash": "udnfTbDvCH8fgzAO2WQYH6JZMDKtSw3RE2+IrW4NL1gQ/mmfR8YeSvzW/0hKwypTz53Pybjl2S3t6TOGv0wTdA==",
         "dependencies": {
-          "Peachpie.Library": "1.1.4",
-          "Peachpie.Runtime": "1.1.4"
+          "Peachpie.Library": "1.1.7",
+          "Peachpie.Runtime": "1.1.7"
         }
       },
       "Peachpie.Library.PDO": {
         "type": "Transitive",
-        "resolved": "1.1.4",
-        "contentHash": "UwSH5E8i+OR1m1W6Ph1oBQCjFaIs6QgKcMfkBrI1oIEJi10bU656gDU0BVczZdVNOyqPzwbSYZsFLgMYLjK0zw==",
+        "resolved": "1.1.7",
+        "contentHash": "3ihwLrJMhtGGQiSv3kjZQAu7rZlTl+y3qhiVKLfS7trvdPe/elCHOYXj8Wji6cFt/JeBhueE0QurvBjNq+NdvA==",
         "dependencies": {
-          "Peachpie.Library": "1.1.4",
-          "Peachpie.Runtime": "1.1.4"
+          "Peachpie.Library": "1.1.7",
+          "Peachpie.Runtime": "1.1.7"
         }
       },
       "Peachpie.Library.RegularExpressions": {
@@ -349,26 +349,26 @@
       },
       "Peachpie.Library.Scripting": {
         "type": "Transitive",
-        "resolved": "1.1.4",
-        "contentHash": "Z3V+Krd377tFv8kGUjMNEYufdoafp8xj44wza8PWetRH0c8IdFZ8IvttkGj21CHCeh+7l0v7K1jx3Bu7XOTK8w==",
+        "resolved": "1.1.7",
+        "contentHash": "sh8cHKi11RWeTvG61mQtUBha7Na2gJMtyWyn85+lJMbF4UOlll0s5vHAdz3nI/+gnk5IdCVkDiNOFcYZIu6+JQ==",
         "dependencies": {
-          "Peachpie.CodeAnalysis": "1.1.4",
-          "Peachpie.Library": "1.1.4",
-          "Peachpie.Library.XmlDom": "1.1.4",
+          "Peachpie.CodeAnalysis": "1.1.7",
+          "Peachpie.Library": "1.1.7",
+          "Peachpie.Library.XmlDom": "1.1.7",
           "Peachpie.Microsoft.CodeAnalysis": "3.7.1",
-          "Peachpie.Runtime": "1.1.4",
+          "Peachpie.Runtime": "1.1.7",
           "System.Runtime.Loader": "4.3.0"
         }
       },
       "Peachpie.Library.XmlDom": {
         "type": "Transitive",
-        "resolved": "1.1.4",
-        "contentHash": "SeiKg1bYfgTiO8JN1nhMHsPG+FcHDoXAWQVk6e+16yqX5NQTV6IFxRC8fSyN++3tBEbqM+rp67zShkdSWFrohQ==",
+        "resolved": "1.1.7",
+        "contentHash": "oHxUiKn1c3X/+BKRvAP9KAkEF7JkVG88bBNgRGUsxG6m4vsdVOQlUass8+wNzLYgrc2Dwey/tGJHTMqB69gMjA==",
         "dependencies": {
           "HtmlAgilityPack": "1.11.25",
           "Mvp.Xml.NetStandard": "1.1.1",
-          "Peachpie.Library": "1.1.4",
-          "Peachpie.Runtime": "1.1.4",
+          "Peachpie.Library": "1.1.7",
+          "Peachpie.Runtime": "1.1.7",
           "System.Security.Cryptography.Xml": "4.4.0",
           "System.Xml.ReaderWriter": "4.3.0",
           "System.Xml.XPath": "4.3.0",

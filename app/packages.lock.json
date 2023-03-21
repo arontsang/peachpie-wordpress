@@ -2656,7 +2656,7 @@
         "type": "Project",
         "dependencies": {
           "PeachPied.WordPress": "[6.1.1-rc-014, 6.1.1-rc-014]",
-          "Peachpie.App": "[1.1.4, )"
+          "Peachpie.App": "[1.1.7, )"
         }
       }
     }

@@ -1,5 +1,6 @@
-<Project Sdk="PeachPied.WordPress.Build.Plugin/6.0.1-rc-010">
+<Project Sdk="PeachPied.WordPress.Build.Plugin">
   <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
     <WpContentTarget></WpContentTarget>
     <PhpRelativePath>wp-content/</PhpRelativePath>
     <RestorePackagesWithLockFile>true</RestorePackagesWithLockFile>
