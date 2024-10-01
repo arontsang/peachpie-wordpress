@@ -1,0 +1,3 @@
+[submodule "app/wordpress/wp-content/themes/twentyseventeen"]
+	path = app/wordpress/wp-content/themes/twentyseventeen
+	url = https://github.com/WordPress/twentyseventeen.git

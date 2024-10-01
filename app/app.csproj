@@ -26,6 +26,9 @@
     <Content Include="..\Dockerfile">
       <Link>Dockerfile</Link>
     </Content>
+    <Content Include="wordpress\**\*" Exclude="wordpress\**\.git\**\*;wordpress\**\.github\**\*">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
 
 </Project>
