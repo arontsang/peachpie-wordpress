@@ -13,10 +13,14 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.Data.Sqlite" Version="9.0.1" />
+    <PackageReference Include="Peachpie.Library.PDO.Sqlite" Version="1.1.10" />
     <PackageReference Include="PeachPied.WordPress.AspNetCore" Version="$(WpDotNetVersion)" />
     <ProjectReference Include="../MyContent/MyContent.msbuildproj">
       <PrivateAssets>None</PrivateAssets>
     </ProjectReference>
+    <ProjectReference Include="..\Peachpie.Library.Sqlite\Peachpie.Library.Sqlite.csproj" />
+    <ProjectReference Include="..\Peachpie.Wordpress.Sqlite\Peachpie.Wordpress.Sqlite.msbuildproj" />
   </ItemGroup>
 
   <ItemGroup>

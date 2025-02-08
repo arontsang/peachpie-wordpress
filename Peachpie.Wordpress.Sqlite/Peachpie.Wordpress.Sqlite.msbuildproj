@@ -11,4 +11,5 @@
   <ItemGroup>
     <ProjectReference Include="..\Peachpie.Library.Sqlite\Peachpie.Library.Sqlite.csproj" />
   </ItemGroup>
+
 </Project>
