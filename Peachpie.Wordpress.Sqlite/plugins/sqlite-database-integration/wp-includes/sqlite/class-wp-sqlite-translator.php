@@ -1441,8 +1441,7 @@ class WP_SQLite_Translator {
 
 		// Select the IDs to delete.
 		$select = $rewriter->get_updated_query();
-		$stmt   = $this->execute_sqlite_query( $select );
-		$stmt->execute( $params );
+		$stmt   = $this->execute_sqlite_query( $select, $params );
 		$rows          = $stmt->fetchAll();
 		$ids_to_delete = array();
 		foreach ( $rows as $id ) {
@@ -1529,8 +1528,7 @@ class WP_SQLite_Translator {
 			$query = $updated_query;
 			// We make the data for next SELECT FOUND_ROWS() statement.
 			$unlimited_query = preg_replace( '/\\bLIMIT\\s\d+(?:\s*,\s*\d+)?$/imsx', '', $query );
-			$stmt            = $this->execute_sqlite_query( $unlimited_query );
-			$stmt->execute( $params );
+			$stmt            = $this->execute_sqlite_query( $unlimited_query, $params );
 			$this->last_sql_calc_found_rows = count( $stmt->fetchAll() );
 		}
 
@@ -2946,8 +2944,7 @@ class WP_SQLite_Translator {
 	 * @return array
 	 */
 	private function get_primary_keys( $table_name ) {
-		$stmt = $this->execute_sqlite_query( 'SELECT * FROM pragma_table_info(:table_name) as l WHERE l.pk > 0;' );
-		$stmt->execute( array( 'table_name' => $table_name ) );
+		$stmt = $this->execute_sqlite_query( 'SELECT * FROM pragma_table_info(:table_name) as l WHERE l.pk > 0;', array( 'table_name' => $table_name ) );
 		return $stmt->fetchAll();
 	}
 
