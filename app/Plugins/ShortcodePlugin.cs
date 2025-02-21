@@ -20,7 +20,7 @@ namespace PeachPied.Demo.Plugins
         {
             app.AddShortcode("dotnetWpUser", new Func<string>(() => //new shortcode_handler((attrs, content) =>
             {
-                var user = (WP_User)app.Context.Call("wp_get_current_user", Array.Empty<PhpValue>()).AsObject();
+                var user = (WP_User)app.Context.Call("wp_get_current_user").AsObject();
                 if (user != null)
                 {
                     return $"Your WP_User ID is {user.ID}.";

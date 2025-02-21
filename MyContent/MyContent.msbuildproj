@@ -6,7 +6,7 @@
     <DisableImplicitNuGetFallbackFolder>true</DisableImplicitNuGetFallbackFolder>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="Peachpie.Library.PDO.Sqlite" Version="1.1.10" />
+    <PackageReference Include="Peachpie.Library.PDO.Sqlite" Version="1.1.11" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Peachpie.Library.Sqlite\Peachpie.Library.Sqlite.csproj" />

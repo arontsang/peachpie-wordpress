@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
-    <TargetFramework>net8.0</TargetFramework>
+    <TargetFramework>net9.0</TargetFramework>
     <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
     <LangVersion>10.0</LangVersion>
     <DisableImplicitNuGetFallbackFolder>true</DisableImplicitNuGetFallbackFolder>
@@ -13,9 +13,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.Data.Sqlite" Version="9.0.1" />
-    <PackageReference Include="Peachpie.Library.PDO.Sqlite" Version="1.1.10" />
     <PackageReference Include="PeachPied.WordPress.AspNetCore" Version="$(WpDotNetVersion)" />
+    <PackageReference Include="Peachpie.AspNetCore.Mvc" Version="$(PeachpieVersion)" />
     <ProjectReference Include="../MyContent/MyContent.msbuildproj">
       <PrivateAssets>None</PrivateAssets>
     </ProjectReference>
