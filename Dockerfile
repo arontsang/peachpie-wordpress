@@ -5,26 +5,23 @@ WORKDIR /app
 EXPOSE 5000
 
 
-FROM alpine AS plugins
-RUN apk add unzip
-ADD https://downloads.wordpress.org/plugin/sqlite-database-integration.2.1.16.zip /tmp/sqlite.zip
-RUN mkdir /tmp/wp-content/plugins -p && unzip /tmp/sqlite.zip -d /tmp/wp-content/plugins/
-RUN cp /tmp/wp-content/plugins/sqlite-database-integration/db.copy /tmp/wp-content/db.php
+
 
 FROM mcr.microsoft.com/dotnet/sdk:9.0 AS build
 WORKDIR /src
 COPY ["app/app.csproj", "app/"]
 COPY ["MyContent/MyContent.msbuildproj", "MyContent/"]
 COPY ["Peachpie.Library.Sqlite/Peachpie.Library.Sqlite.csproj", "Peachpie.Library.Sqlite/"]
+COPY ["Peachpie.Wordpress.Sqlite/Peachpie.Wordpress.Sqlite.msbuildproj", "Peachpie.Wordpress.Sqlite/"]
 COPY ["global.json", "global.json"]
 COPY ["Directory.Build.props", "Directory.Build.props"]
+COPY ["peachpie-wordpress.sln", "./"]
 
 
 
-RUN dotnet restore "app/app.csproj" -v diag
+RUN dotnet restore "peachpie-wordpress.sln" -v diag
 COPY . .
 WORKDIR "/src/app"
-COPY --from=plugins /tmp/wp-content/ /src/MyContent/
 ARG config
 RUN  dotnet build "app.csproj" -c $config --no-restore -o /app/build  
 
