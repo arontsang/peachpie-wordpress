@@ -26,7 +26,6 @@ COPY /Peachpie.Library.Sqlite/ /src/Peachpie.Library.Sqlite/
 COPY /Peachpie.Wordpress.Sqlite/ /src/Peachpie.Wordpress.Sqlite/
 WORKDIR "/src/app"
 ARG config
-RUN  dotnet build "app.csproj" -c $config --no-restore -o /app/build  
 
 FROM build AS publish
 ARG config
@@ -55,8 +54,8 @@ RUN tar -C /dist -zxvf /tmp/litestream.tar.gz
 FROM base AS final
 COPY --from=s6-overlay /rootfs /
 COPY --from=publish /app/publish /app
-ENV ASPNETCORE_URLS=http://*:8080
 EXPOSE 8080
+EXPOSE 8200
 
 COPY /s6/etc/ /etc/
 COPY --from=litestream /dist/litestream /opt/bin/litestream
