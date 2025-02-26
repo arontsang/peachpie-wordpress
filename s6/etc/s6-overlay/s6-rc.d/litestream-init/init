@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+if [[ $BUCKET_LOCATION ]]; then
+  echo "Pulling SQLite Database"
+  mkdir /app/wordpress/wp-content/database -p
+  
+  /opt/bin/litestream restore -o /app/wordpress/wp-content/database/.ht.sqlite $BUCKET_LOCATION
+else
+  echo "BUCKET_LOCATION env var not set, skipping litestream restore"
+fi
+
