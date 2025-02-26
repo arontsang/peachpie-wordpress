@@ -18,7 +18,7 @@ public class Startup
 	{
 		services.AddMvc();
 		services.AddResponseCompression();
-		services.AddWordPress();
+		services.AddWordPress(option => {});
 	}
 
 	public void Configure(IApplicationBuilder app, IHostEnvironment env, IConfiguration configuration)
