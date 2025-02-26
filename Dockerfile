@@ -27,7 +27,14 @@ COPY /Peachpie.Wordpress.Sqlite/ /src/Peachpie.Wordpress.Sqlite/
 WORKDIR "/src/app"
 ARG config
 
+FROM mcr.microsoft.com/dotnet/sdk:9.0 AS plugins
+RUN apt-get update && apt-get install -y unzip
+ADD https://downloads.wordpress.org/theme/twentyseventeen.3.8.zip /tmp/twentyseventeen.3.8.zip
+RUN mkdir /dist/{plugins,themes} -p
+RUN unzip /tmp/twentyseventeen.3.8.zip -d /dist/themes/
+
 FROM build AS publish
+COPY --from=plugins /dist/ /src/MyContent/
 ARG config
 RUN dotnet publish "app.csproj" \
     -c $config  \
