@@ -1,0 +1,2 @@
+#!/command/with-contenv bash
+echo "Pulling SQLite Database"

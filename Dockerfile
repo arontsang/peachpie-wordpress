@@ -38,12 +38,19 @@ RUN dotnet publish "app.csproj" \
 
 FROM mcr.microsoft.com/dotnet/sdk:9.0 AS s6-overlay
 ARG S6_OVERLAY_VERSION=3.2.0.2
-RUN apt-get update && apt-get install -y nginx xz-utils
+RUN apt-get update && apt-get install -y xz-utils
 RUN mkdir /rootfs
 ADD https://github.com/just-containers/s6-overlay/releases/download/v${S6_OVERLAY_VERSION}/s6-overlay-noarch.tar.xz /tmp
 RUN tar -C /rootfs -Jxpf /tmp/s6-overlay-noarch.tar.xz
 ADD https://github.com/just-containers/s6-overlay/releases/download/v${S6_OVERLAY_VERSION}/s6-overlay-x86_64.tar.xz /tmp
 RUN tar -C /rootfs -Jxpf /tmp/s6-overlay-x86_64.tar.xz
+
+FROM mcr.microsoft.com/dotnet/sdk:9.0 AS litestream
+ARG LITESTREAM_VERSION=0.3.13
+RUN apt-get update && apt-get install -y tar gzip
+ADD https://github.com/benbjohnson/litestream/releases/download/v${LITESTREAM_VERSION}/litestream-v${LITESTREAM_VERSION}-linux-amd64.tar.gz /tmp/litestream.tar.gz
+RUN mkdir /dist
+RUN tar -C /dist -zxvf /tmp/litestream.tar.gz
 
 FROM base AS final
 COPY --from=s6-overlay /rootfs /
@@ -52,5 +59,6 @@ ENV ASPNETCORE_URLS=http://*:8080
 EXPOSE 8080
 
 COPY /s6/etc/ /etc/
+COPY --from=litestream /dist/litestream /opt/bin/litestream
 
 CMD ["/init"]
