@@ -2,7 +2,7 @@
 echo "Syncing SQLite WAL"
 
 if [[ $BUCKET_LOCATION ]]; then
-  /opt/bin/litestream replicate /app/wordpress/wp-content/database/.ht.sqlite $BUCKET_LOCATION
+  /opt/bin/litestream replicate /tmp/.ht.sqlite $BUCKET_LOCATION
 else
   echo "BUCKET_LOCATION env var not set, skipping litestream sync"
   /usr/bin/sleep 99d

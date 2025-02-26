@@ -1,3 +1,4 @@
 #!/command/with-contenv sh
 cd /app
+export Wordpress__Constants__FQDBDIR=/tmp/
 /usr/bin/dotnet /app/app.dll
