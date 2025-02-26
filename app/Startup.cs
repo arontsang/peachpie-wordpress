@@ -18,13 +18,7 @@ public class Startup
 	{
 		services.AddMvc();
 		services.AddResponseCompression();
-		services.AddWordPress(options =>
-		{
-			// options.SiteUrl =
-			if (Configuration["HomeUrl"] is {} url)
-				options.HomeUrl =  url;
-			// options.PluginContainer.Add<DashboardPlugin>(); // add plugin using dependency injection
-		});
+		services.AddWordPress();
 	}
 
 	public void Configure(IApplicationBuilder app, IHostEnvironment env, IConfiguration configuration)
