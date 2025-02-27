@@ -30,8 +30,10 @@ ARG config
 FROM mcr.microsoft.com/dotnet/sdk:9.0 AS plugins
 RUN apt-get update && apt-get install -y unzip
 ADD https://downloads.wordpress.org/theme/twentyseventeen.3.8.zip /tmp/twentyseventeen.3.8.zip
+ADD https://downloads.wordpress.org/plugin/wp-super-cache.2.0.0.zip /tmp/wp-super-cache.2.0.0.zip
 RUN mkdir /dist/{plugins,themes} -p
 RUN unzip /tmp/twentyseventeen.3.8.zip -d /dist/themes/
+RUN unzip /tmp/wp-super-cache.2.0.0.zip -d /dist/plugins/
 
 FROM build AS publish
 COPY --from=plugins /dist/ /src/MyContent/
