@@ -2,7 +2,7 @@
 if [[ $BUCKET_LOCATION ]]; then
   echo "Pulling SQLite Database"
   
-  /opt/bin/litestream restore -o /tmp/.ht.sqlite $BUCKET_LOCATION
+  /opt/bin/litestream restore -o /tmp/.ht.sqlite $BUCKET_LOCATION || true
 else
   echo "BUCKET_LOCATION env var not set, skipping litestream restore"
 fi
