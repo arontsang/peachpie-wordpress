@@ -74,7 +74,8 @@ EXPOSE 8200
 COPY /s6/etc/ /etc/
 COPY --from=litestream /dist/litestream /opt/bin/litestream
 COPY /litestream.yml /etc/litestream.yml
-ARG RETENTION=5m
+ENV RETENTION=1h
+ENV SYNC_INTERVAL=5m
 ENV Wordpress__Constants__WPDOTNET_HOTPLUG_ENABLE=0
 
 CMD ["/init"]

@@ -3,3 +3,4 @@ dbs:
     replicas:
       - url: $BUCKET_LOCATION
         retention: $RETENTION
+        sync-interval: $SYNC_INTERVAL
