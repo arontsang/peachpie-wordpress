@@ -1,5 +1,5 @@
 dbs:
   - path: /tmp/.ht.sqlite
     replicas:
-      - url: $BUCKET_LOCATION
+      - path: $BUCKET_LOCATION
         retention: $RETENTION
