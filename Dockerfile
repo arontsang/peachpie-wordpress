@@ -25,7 +25,6 @@ COPY /MyContent/ /src/MyContent/
 COPY /Peachpie.Library.Sqlite/ /src/Peachpie.Library.Sqlite/
 COPY /Peachpie.Wordpress.Sqlite/ /src/Peachpie.Wordpress.Sqlite/
 WORKDIR "/src/app"
-ARG config
 
 FROM mcr.microsoft.com/dotnet/sdk:9.0 AS plugins
 RUN apt-get update && apt-get install -y unzip
@@ -38,6 +37,10 @@ RUN unzip /tmp/wp-super-cache.2.0.0.zip -d /dist/plugins/
 FROM build AS publish
 COPY --from=plugins /dist/ /src/MyContent/
 ARG config
+RUN dotnet build "app.csproj" \
+    -c $config  \
+    -r linux-x64  \
+    -o /app/publish 
 RUN dotnet publish "app.csproj" \
     -c $config  \
     -r linux-x64  \
