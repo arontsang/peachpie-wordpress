@@ -44,6 +44,7 @@ RUN dotnet build "app.csproj" \
 RUN dotnet publish "app.csproj" \
     -c $config  \
     -r linux-x64  \
+    -p:PublishReadyToRun=true \
     --self-contained  \
     -o /app/publish 
 
