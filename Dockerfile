@@ -69,5 +69,6 @@ EXPOSE 8200
 COPY /s6/etc/ /etc/
 COPY --from=litestream /dist/litestream /opt/bin/litestream
 COPY /litestream.yml /etc/litestream.yml
+ARG RETENTION=5m
 
 CMD ["/init"]

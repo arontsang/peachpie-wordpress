@@ -2,4 +2,4 @@ dbs:
   - path: /tmp/.ht.sqlite
     replicas:
       - url: $BUCKET_LOCATION
-        retention: 1h
+        retention: $RETENTION
